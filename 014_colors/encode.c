@@ -3,7 +3,6 @@
 
 int encode(int red, int green, int blue) {
     int color = 0;
-    printf("Enter arguments for your color between 0-255, rr gg bb");
     color = ((red & 0xff) << 16) | ((green & 0xff) << 8) | (blue & 0xff);
     return color;
 }
